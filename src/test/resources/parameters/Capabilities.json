@@ -1,0 +1,53 @@
+{
+	"browserCapabilities": [
+		{
+			"name": "chrome",
+			"type": "chrome",
+			"arguments": [
+				{
+					"key": "--disable-dev-shm-usage",
+					"value": "--no-sandbox"
+				},
+				{
+					"key": "ensureCleanSession",
+					"value": "true"
+				}
+			]
+		},
+		{
+			"name": "chromeIphoneX",
+			"type": "chrome",
+			"mobileEmulation": {
+				"deviceName": "iPhone X"
+			},
+			"arguments": [
+				{
+					"key": "--disable-dev-shm-usage",
+					"value": "--no-sandbox"
+				},
+				{
+					"key": "ensureCleanSession",
+					"value": "true"
+				},
+				{
+					"key": "ensureCleanSession",
+					"value": "true"
+				}
+			]
+		},
+		{
+			"name": "firefox",
+			"type": "firefox",
+			"arguments": [
+				{
+					"key": "marionette",
+					"value": "true"
+				},
+				{
+					"key": "ensureCleanSession",
+					"value": "true"
+				}
+			]
+		}
+	]
+}
